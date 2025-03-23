@@ -34,7 +34,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/pdf/resume.pdf'; // Adjust the path to your CV
+    link.href = '/images/pdf/resume.pdf'; // Adjust the path to your CV
     link.download = 'Selva_Sivam_CV.pdf';
     link.click();
   };
