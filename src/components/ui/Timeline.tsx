@@ -32,6 +32,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/pdf/resume.pdf'; // Adjust the path to your CV
+    link.download = 'Selva_Sivam_CV.pdf';
+    link.click();
+  };
+
+  const handleHireMe = () => {
+    window.location.href = '#contact';
+  };
+
   return (
     <div
       className="w-full bg-white dark:bg-gray-900 font-sans md:px-10"
@@ -44,6 +55,22 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base max-w-sm mx-auto">
           A journey through my career growth, leadership, and technical contributions.
         </p>
+
+        {/* Buttons Section */}
+        <div className="mt-6 flex justify-center gap-4">
+          <button
+            onClick={handleDownloadCV}
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700"
+          >
+            Download CV
+          </button>
+          <button
+            onClick={handleHireMe}
+            className="px-6 py-3 bg-gray-800 text-white rounded-lg shadow-lg hover:bg-gray-900"
+          >
+            Hire Me
+          </button>
+        </div>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

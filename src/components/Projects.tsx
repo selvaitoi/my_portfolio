@@ -13,18 +13,29 @@ const Projects = () => {
         consultations: "200+"
       },
       tech: ['React', 'Node.js'],
-      href: "https://example.com/teledoctor"
+      href: "https://app.teledoctor.life/"
     },
     {
-      title: "Heart Disease Prediction",
-      description: "ML model with 92% accuracy for heart disease prediction using NLP for health data processing.",
-      image: "https://images.unsplash.com/photo-1576670159805-381a0aa9c8bf?w=800&h=400&fit=crop",
+      title: "Inherit Initiative Maps (IIM)",
+      description: "Developed an interactive map application displaying 500+ church locations and community data.",
+      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=400&fit=crop",
       stats: {
-        accuracy: "92%",
-        engagement: "40%"
+        locations: "500+",
+        efficiency: "40%"
       },
-      tech: ['Python', 'Machine Learning', 'NLP'],
-      href: "https://example.com/heart-prediction"
+      tech: ['PHP', 'Google Maps API', 'JavaScript', 'REST APIs'],
+      href: "https://inheritinitiative.org/"
+    },
+    {
+      title: "WhatsApp Business Automation",
+      description: "Automated 10,000+ daily messages using WhatsApp Business API with scheduling and templates.",
+      image: "https://images.unsplash.com/photo-1580894732444-8ecded7900fd?w=800&h=400&fit=crop",
+      stats: {
+        messages: "10K+",
+        engagement: "65%"
+      },
+      tech: ['Node.js', 'WhatsApp Business API', 'MySQL'],
+      href: "https://whaps.in"
     },
     {
       title: "Career Journey",
@@ -35,12 +46,47 @@ const Projects = () => {
         users: "10K+"
       },
       tech: ['JavaScript', 'React', 'Node.js'],
-      href: "https://example.com/career-journey"
-    }
+      href: "https://careerjourney.org"
+    },
+
+    {
+      title: "DCC School Management",
+      description: "Developed a responsive school management system with Face Recognition Attendance System (95% accuracy).",
+      image: "/images/project/dcc.png",
+      stats: {
+        satisfaction: "70%",
+        accuracy: "95%"
+      },
+      tech: ['Python', 'CodeIgniter 4', 'MySQL', 'Angular', 'Ionic'],
+      href: "https://dcc.gemsbihar.info"
+    },
+    {
+      title: "Heart Disease Prediction",
+      description: "ML model with 92% accuracy for heart disease prediction using NLP for health data processing.",
+      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=400&fit=crop",
+      stats: {
+        accuracy: "92%",
+        engagement: "40%"
+      },
+      tech: ['Python', 'Machine Learning', 'NLP']
+    },
+
+    {
+      title: "Gospel Echoing Missionary Society",
+      description: "Built a telemedicine platform enabling 200+ daily virtual consultations with integrated payment gateways.",
+      image: "/images/project/gems.png",
+      stats: {
+        staff: "40%",
+        RoleManagement: "60%"
+      },
+      tech: ['CodeIgniter 4', 'MySQL', 'Angular', 'Firebase'],
+      href: "https://app.teledoctor.life/"
+    },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900 mt-20">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
           Featured Projects

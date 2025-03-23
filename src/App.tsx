@@ -9,14 +9,12 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import { Dock, DockIcon } from './components/ui/Dock';
 import Navbar from "./components/Navbar";
+import TawkTo from "./components/TawkTo";
 
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
 
   return (
     <HelmetProvider>
@@ -36,6 +34,7 @@ function App() {
           <Projects />
           <Skills />
           <Contact />
+          <TawkTo />
         </main>
 
         <footer className="fixed bottom-0 left-0 right-0 flex justify-center pb-6 z-50">
