@@ -87,7 +87,7 @@ const About = () => {
               {/* Apply Glowing Effect */}
               <GlowingEffect
                 spread={80}
-                glow={true}
+                glow={false}
                 disabled={false}
                 proximity={64}
                 inactiveZone={0.01}
