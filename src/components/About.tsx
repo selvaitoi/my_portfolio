@@ -87,7 +87,7 @@ const About = () => {
               {/* Apply Glowing Effect */}
               <GlowingEffect
                 spread={80}
-                glow={false}
+                glow={true}
                 disabled={false}
                 proximity={64}
                 inactiveZone={0.01}
@@ -120,7 +120,6 @@ const About = () => {
                   width="100%"
                   height="100%"
                   href="/images/full.png"
-                  style={{ filter: 'url(#glow)' }}
                   preserveAspectRatio="xMidYMid slice"
                 />
               </svg>
