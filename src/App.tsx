@@ -13,7 +13,7 @@ import TawkTo from "./components/TawkTo";
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
 
   return (
